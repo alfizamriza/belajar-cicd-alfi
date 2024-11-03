@@ -12,3 +12,4 @@ RUN go build -o /belajar-cicd-alfi
 RUN CGO_ENABLED=0 GOOS=linux go build -o /belajar-cicd-alfi
 ENV PORT 8080
 CMD ["/belajar-cicd-alfi"]
+
