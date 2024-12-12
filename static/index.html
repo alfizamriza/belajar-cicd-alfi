@@ -1,126 +1,74 @@
 <!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Blog</title>
-        <style>
-            /* Header style */
-            header {
-                text-align: center; 
-                padding: 20px;
-            }
+<html lang="en">
 
-            /* Navigation menu style */
-            nav {
-                text-align: center;
-                word-spacing: 30px;
-                padding: 10px;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Gamponng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="LOGO.PNG" type="image/x-icon">
+</head>
 
-            /* General reset and layout */
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+<body>
+    <nav class="shadow-xl fixed top-0 left-0 right-0 flex items-center justify-between flex-wrap bg-white p-6">
+        <div class="flex items-center flex-shrink-0 text-teal-800 mr-6">
+            <img src="LOGO.png" class="fill-current h-10 w-10 mr-2" width="54" height="54" viewBox="0 0 54 54">
+            <span class="font-bold text-xl tracking-tight">E-GAMPONG</span>
+        </div>
+    </nav>
 
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-            }
-
-            /* Two-column layout */
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-
-            .post-text-box {
-                flex: 1;
-                padding: 20px;
-                background-color: white;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-
-            .profile {
-                flex: 1;
-                padding: 20px;
-                background-color: white;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                text-align: center;
-            }
-
-            /* Profile image style */
-            .profile img {
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                margin-bottom: 15px;
-            }
-
-            /* Footer styling */
-            footer {
-                text-align: center;
-                padding: 10px;
-                background-color: #333;
-                color: white;
-            }
-
-            footer a {
-                color: white;
-                text-decoration: none;
-                margin: 0 10px;
-            }
-
-            footer a:hover {
-                text-decoration: underline;
-            }
-
-            /* Responsive layout */
-            @media (max-width: 768px) {
-                .row {
-                    flex-direction: column;
-                }
-
-                .post-text-box, .profile {
-                    flex: 1 100%;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Alfi Zamriza</h1>
-            <nav>
-                <a href="https://domain.tld/home">Home</a>
-                <a href="https://domain.tld/blog">Blog</a>
-                <a href="https://domain.tld/about">About</a>
-            </nav>
-        </header>
-        <main>
-            <div class="row">
-                <div class="post-text-box">
-                    <h1>EGAMPONG</h1>
-                    <section>
-                        <h2>First Post</h2>
-                        <p>The first post’s content</p>
-                    </section>
+    <div>
+        <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+            <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+            <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div class="relative pt-36 ml-auto">
+                <div class="lg:w-2/3 text-center mx-auto">
+                    <div class="flex items-center justify-center -space-x-2 mb-5">
+                        <img loading="lazy" width="220" height="220" src="Alfi.png" alt="member photo" class="h-8 w-8 rounded-full object-cover">
+                        <img loading="lazy" width="220" height="220" src="ihsan.png" alt="member photo" class="h-12 w-12 rounded-full object-cover">
+                        <img loading="lazy" width="220" height="220" src="fadlul.png" alt="member photo" class="z-10 h-16 w-16 rounded-full object-cover">
+                        <img loading="lazy" width="220" height="220" src="Farhan.png" alt="member photo" class="relative h-12 w-12 rounded-full object-cover">
+                        <img loading="lazy" width="220" height="220" src="Gempi.png" alt="member photo" class="h-8 w-8 rounded-full object-cover">
+                    </div>
+                    <h1 class="text-gray-900 dark:text-teal-800 font-bold text-5xl md:text-6xl xl:text-7xl">E-GAMPONG</h1>
+                    <p class="mt-8 text-gray-700 dark:text-teal-900">Kami siap membantu anda dalam berbagai urusan Administrasi melalui website E-Gampong. Website ini dapat membuat surat keterangan miskin dan surat pindah.</p>
+                    <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                        <a href="reg.html" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max dark:before:border-teal-800 dark:before:bg-teal-700">
+                            <span class="relative text-base font-semibold text-white">DAFTAR</span>
+                        </a>
+                        <a href="login.html" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-teal-800 dark:before:bg-teal-800 sm:w-max">
+                            <span class="relative text-base font-semibold text-primary dark:text-white">MASUK</span>
+                        </a>
+                    </div>
+                    <div class="hidden py-8 mt-40 border-y border-gray-100 dark:border-teal-900 sm:flex justify-between">
+                        <div class="text-left">
+                            <h6 class="text-lg font-bold text-gray-700 dark:text-teal-900">SURAT TIDAK MAMPU</h6>
+                            <p class="mt-2 text-gray-500">Gratis</p>
+                        </div>
+                        <div class="text-right">
+                            <h6 class="text-lg font-bold text-gray-700 dark:text-teal-900">SURAT PINDAH</h6>
+                            <p class="mt-2 text-gray-500">Gratis</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="profile">
-                    <h1>About Me</h1>
-                    <img src="path_to_profile_image.jpg" alt="Profile Image">
-                    <p>About the author</p>
+                <div class="mt-12 flex flex-wrap justify-center grid-cols-3 sm:grid-cols-4 md:grid-cols-6 ">
+                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                        <img src="Image/Garuda_Pancasila,_Coat_of_Arms_of_Indonesia.png" class="h-16 w-auto m-auto" loading="lazy" alt="client logo">
+                    </div>
+                    <div class="p-4 mr-12 ml-12 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="Image/Coat_of_arms_of_Aceh.png" class="h-16 w-auto mx-auto" loading="lazy" alt="Provinsi Aceh">
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="Image/Logo_Cahaya-Aceh2.png" class="h-16 w-auto mx-auto" loading="lazy" alt="client logo">
+                    </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <a href="https://twitter.com/author">Twitter</a>
-            <a href="https://facebook.com/author">Facebook</a>
-            <a href="https://instagram.com/author">Instagram</a>
-        </footer>
-    </body>
+        </div>
+    </div>
+
+</body>
+
 </html>
