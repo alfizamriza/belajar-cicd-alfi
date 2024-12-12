@@ -1,28 +1,126 @@
 <!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Blog</title>
+        <style>
+            /* Header style */
+            header {
+                text-align: center; 
+                padding: 20px;
+            }
 
-<head>
-    <title>Belajar CI/CD untuk Pemula</title>
-    <style>
-        body {
-            background-color: #ffffff;
-        }
+            /* Navigation menu style */
+            nav {
+                text-align: center;
+                word-spacing: 30px;
+                padding: 10px;
+            }
 
-        h1 {
-            color: #C26356;
-            font-size: 30px;
-            font-family: Menlo, Monaco, fixed-width;
-        }
+            /* General reset and layout */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
-        p {
-            color: rgb(0, 0, 0);
-            font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
-        }
-    </style>
-</head>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
 
-<body>
-    <h1>Belajar CI/CD untuk Pemula</h1>
-    <p>Ini adalah contoh halaman HTML - Belajar CI/CD pemula</a></p>
-</body>
+            /* Two-column layout */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
 
+            .post-text-box {
+                flex: 1;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .profile {
+                flex: 1;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            /* Profile image style */
+            .profile img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin-bottom: 15px;
+            }
+
+            /* Footer styling */
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #333;
+                color: white;
+            }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            footer a:hover {
+                text-decoration: underline;
+            }
+
+            /* Responsive layout */
+            @media (max-width: 768px) {
+                .row {
+                    flex-direction: column;
+                }
+
+                .post-text-box, .profile {
+                    flex: 1 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Alfi Zamriza</h1>
+            <nav>
+                <a href="https://domain.tld/home">Home</a>
+                <a href="https://domain.tld/blog">Blog</a>
+                <a href="https://domain.tld/about">About</a>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="post-text-box">
+                    <h1>Newest Post</h1>
+                    <section>
+                        <h2>First Post</h2>
+                        <p>The first post’s content</p>
+                    </section>
+                </div>
+                <div class="profile">
+                    <h1>About Me</h1>
+                    <img src="path_to_profile_image.jpg" alt="Profile Image">
+                    <p>About the author</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="https://twitter.com/author">Twitter</a>
+            <a href="https://facebook.com/author">Facebook</a>
+            <a href="https://instagram.com/author">Instagram</a>
+        </footer>
+    </body>
 </html>
