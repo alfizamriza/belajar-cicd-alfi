@@ -6,10 +6,9 @@ COPY go.mod ./
 COPY *.go ./
 COPY static ./static
 
-RUN go build -o /belajar-cicd-alfi
+RUN go build -o /belajar-cicd-pemula
 
 # EXPOSE 3000
-RUN CGO_ENABLED=0 GOOS=linux go build -o /belajar-cicd-alfi
+RUN CGO_ENABLED=0 GOOS=linux go build -o /belajar-cicd-pemula
 ENV PORT 8080
 CMD ["/belajar-cicd-alfi"]
-
